@@ -1,16 +1,15 @@
 import json
 import os
 import time
-
 import requests
 
-arquivos = os.listdir(
+arquivos_species = os.listdir(
     "C:\\Users\\Remakker\\PDI-lilian\\pokemon-pdi\\bronze-layer\\pokemon-species"
 )
 
 evolution_ids = []
 
-for i in arquivos:
+for i in arquivos_species:
     if i.endswith(".json"):
         with open(
             f"C:\\Users\\Remakker\\PDI-lilian\\pokemon-pdi\\bronze-layer\\pokemon-species\\{i}",
@@ -21,6 +20,7 @@ for i in arquivos:
         evolution_url = pokemon["evolution_chain"]["url"]
         evolution_id = evolution_url.split("/")[-2]
         evolution_ids.append(evolution_id)
+        
 
 ids_unique = list(set(evolution_ids))
 
