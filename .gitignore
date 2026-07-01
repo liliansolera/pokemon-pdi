@@ -3,9 +3,9 @@ venv/
 __pycache__
 .ipynb_checkpoints
 .vscode
-.log
-.parquet
-.json
+*.log
+*.parquet
+*.json
 
 bronze-layer/pokemon/
 bronze-layer/pokemon-species/
