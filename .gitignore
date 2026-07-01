@@ -1,0 +1,23 @@
+.env
+venv/
+__pycache__
+.ipynb_checkpoints
+.vscode
+*.log
+*.parquet
+*.json
+
+bronze-layer/pokemon/
+bronze-layer/pokemon-species/
+bronze-layer/encounters/
+bronze-layer/evolution-chain/
+bronze-layer/type/
+
+
+##REVISÃO HIGOR
+# tratar status codes diferentes
+# response 200 segue,
+# criar funções: request_API, salvar_arquivo - ok
+# sem print o for terá ~6 linhas
+
+# extraio a lista, checa a geração em vez do id primeiro, se for geração 1, armazeno
